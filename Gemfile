@@ -23,6 +23,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capybara'
 gem 'launchy'
 gem 'bcrypt', '~> 3.1.7'
+gem "validate_url"
+
 
 
 

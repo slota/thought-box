@@ -50,7 +50,6 @@ class UserVisitsRootTest < ActiveSupport::TestCase
     click_on("Sign Out")
 
     assert_current_path("/")
-
   end
 
 
