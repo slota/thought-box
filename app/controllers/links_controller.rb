@@ -14,6 +14,10 @@ class LinksController < ApplicationController
     redirect_to links_path
   end
 
+  def edit
+
+  end
+
   private
 
   def link_params

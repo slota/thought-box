@@ -45,7 +45,6 @@ class UserVisitsLinkPageTest < ActiveSupport::TestCase
 
     click_on("Save Link")
 
-    save_and_open_page
     assert page.has_content?("Successfully saved link.")
     assert page.has_content?("title")
     assert page.has_content?("http://today.turing.io/outlines/2016-04-18/")

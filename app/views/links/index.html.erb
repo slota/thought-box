@@ -20,7 +20,11 @@
     </p>
   <% end %>
 
+
   <% @links.each do |link| %>
-    <%= link.url %>
-    <%= link.title %>
+    <div id="<%= link.url %>">
+      <%= link.url %>
+      <%= link.title %>
+      <%= link_to("edit", edit_link_path(link)) %>
+    </div>
   <% end %>

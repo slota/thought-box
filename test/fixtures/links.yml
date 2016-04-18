@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  url: MyString
-  title: MyString
+  id: 1
+  url: url_one
+  title: title
   read: false
 
 two:
-  url: MyString
-  title: MyString
+  id: 2
+  url: url_two
+  title: title_two
   read: false
