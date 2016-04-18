@@ -1,5 +1,9 @@
   Welcome <%= @user.email %>
 
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+
   <%=  link_to("Sign Out", user_path(@user), :method => :delete)%>
 
   <%= form_for :link, url: links_path do |f| %>
@@ -14,4 +18,9 @@
     <p>
       <%= f.submit %>
     </p>
+  <% end %>
+
+  <% @links.each do |link| %>
+    <%= link.url %>
+    <%= link.title %>
   <% end %>
