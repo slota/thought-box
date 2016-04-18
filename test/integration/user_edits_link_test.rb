@@ -23,5 +23,17 @@ test "user can edit links" do
     end
 
     assert current_path, "/links/1/edit"
+    page.has_field?('Url', :with => 'url_one')
+    page.has_field?('Title', :with => 'title')
+
+    fill_in("Url", :with => "https://github.com/")
+    fill_in("Title", :with => "john")
+
+    click_on("Save changes")
+    save_and_open_page
+
+    assert current_path, "/links"
+    assert page.has_content?("john")
+    assert page.has_content?("https://github.com/")
   end
 end
