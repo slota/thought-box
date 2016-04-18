@@ -22,7 +22,6 @@ class UserMarksAsReadTest < ActiveSupport::TestCase
       click_on("Mark as read")
     end
 
-    save_and_open_page
     assert_current_path("/links")
     assert page.has_content?("Mark as unread")
   end
