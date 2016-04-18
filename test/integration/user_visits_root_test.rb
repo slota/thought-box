@@ -15,17 +15,20 @@ class UserVisitsRootTest < ActiveSupport::TestCase
     visit("/")
     click_link("Sign Up")
 
-    assert page.has_content?("Email address")
+    assert page.has_content?("Email")
     assert page.has_content?("Password")
     assert page.has_content?("Password confirmation")
 
-    fill_in('Email address', :with => "John.Slota@gmail.com")
+    fill_in('Email', :with => "John.Slota@gmail.com")
     fill_in('Password', :with => "123")
     fill_in('Password confirmation', :with => "123")
 
     click_on("Save User")
 
     assert_current_path("/links")
+    assert page.has_content?("Welcome John.Slota@gmail.com")
   end
+
+
 
 end
