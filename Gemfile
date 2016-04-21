@@ -24,6 +24,7 @@ gem 'capybara'
 gem 'launchy'
 gem 'bcrypt', '~> 3.1.7'
 gem "validate_url"
+gem 'rails_12factor'
 
 
 
