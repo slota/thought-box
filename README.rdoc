@@ -1,3 +1,4 @@
 == README
 
-[THOUGHT BOX!]("https://sleepy-bastion-11885.herokuapp.com")
+A quick little project I puth together in a quick day, 
+https://sleepy-bastion-11885.herokuapp.com
